@@ -19,10 +19,14 @@ public class JDBCTest {
     @Test
     public void connection() {
         try(Connection conn = DriverManager.getConnection(
-                "jdbc:oracle:thin:@localhost:1521:XE", "hajo", "test11")) {
+                "jdbc:oracle:thin:@localhost:1521:XE", "malgae", "test11")) {
             log.info(conn);
         } catch (Exception e) {
             fail(e.getMessage());
         }
     }
+
+
+
+
 }
